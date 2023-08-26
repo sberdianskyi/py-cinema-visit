@@ -8,7 +8,6 @@ def cinema_visit(customers: list[dict],
                  hall_number: int,
                  cleaner: str,
                  movie: str) -> None:
-    CinemaBar()
     for customer in customers:
         CinemaBar.sell_product(customer["food"],
                                Customer(customer["name"],
@@ -19,4 +18,3 @@ def cinema_visit(customers: list[dict],
                                                      for customer in customers
                                                      ],
                                           cleaning_staff=Cleaner(cleaner))
-    Cleaner(cleaner)
